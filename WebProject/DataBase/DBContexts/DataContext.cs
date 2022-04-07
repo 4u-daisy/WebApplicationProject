@@ -11,7 +11,7 @@ namespace DBContexts.DBContexts
 {
     public class DataContext : DbContext
     {
-        public DbSet<WeatherDayView>? WeatherDayViews { get; set; }
+        public DbSet<WeatherDayView> WeatherDayViews { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

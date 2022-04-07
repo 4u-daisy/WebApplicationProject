@@ -1,16 +1,38 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE HTML>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-    <title>Root</title>
+    <title>Красивая веб страница</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+    <style>
+        a {
+            color: #0000ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+  </style>
 </head>
-
 <body>
-    <div align=center>
-        <h2>Моя первая страница на HTML</h2>
-        <br>
-        <h1>Привет МИР!</h1>
-    </div>
+    <header id="header">
+                <h1>Красивый заголовок 1</h1>
+                <p>...Помогите написать радиотех</p>
+                <nav>
+                    <ul>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/weatherforecast">Weather forecast</a></li>
+                        <li><a href="/weatherdayviews/create">Weather day views</a></li>
+                        <li><a href="https://github.com/4u-daisy">Github</a></li>
+                    </ul>
+                </nav>
+            </header>
+    <script>
+        window.onload = function () { document.body.classList.remove('is-preload'); }
+        window.ontouchmove = function () { return false; }
+        window.onorientationchange = function () { document.body.scrollTop = 0; }
+    </script>
 </body>
-
 </html>

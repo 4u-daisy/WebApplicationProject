@@ -4,11 +4,11 @@
     {
         //private WeatherDay? weatherDay;
         public int Id { get; set; }
-        public string? City { get; private set; }
-        public string? WeatherName { get; private set; }
-        public string? WeatherShortDescription { get; private set; }
-        public double? WeatherTemperature { get; private set; }
-        public double? WeatherTemperatureFeelsLikeCels { get; private set; }
+        public string City { get; private set; }
+        public string WeatherName { get; private set; }
+        public string WeatherShortDescription { get; private set; }
+        public double WeatherTemperature { get; private set; }
+        public double WeatherTemperatureFeelsLikeCels { get; private set; }
 
         public WeatherDayView()
         {

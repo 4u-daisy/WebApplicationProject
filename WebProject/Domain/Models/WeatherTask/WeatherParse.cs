@@ -2,9 +2,9 @@
 {
     public class WeatherParse
     {
-        public string? Name { get; set; }
-        public List<Dictionary<string, string>>? Weather { get; set; }
-        public MainInfo? Main { get; set; }
+        public string Name { get; set; }
+        public List<Dictionary<string, string>> Weather { get; set; }
+        public MainInfo Main { get; set; }
     }
 
     public class MainInfo

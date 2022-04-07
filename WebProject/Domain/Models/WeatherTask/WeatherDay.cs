@@ -5,12 +5,12 @@ namespace WebProject.Domain.Models.WeatherTask
 {
     public class WeatherDay
     {
-        public string? City { get; set; }
-        public string? TemperatureScale { get; set; }
+        public string City { get; set; }
+        public string TemperatureScale { get; set; }
 
         readonly private string startString = "https://api.openweathermap.org/data/2.5/weather?q=";
         readonly private string key = "&units=imperial&appid=68c8fa9c9ab7cc268f898581bf912260";
-        private string? url;
+        private string url;
 
         public WeatherParse? WeatherDayParse { get; set; }
         
@@ -25,6 +25,7 @@ namespace WebProject.Domain.Models.WeatherTask
 
         public WeatherDay()
         {
+            City = "Kazan";
             TemperatureScale = "Celsius";
             url = startString + City + key;
             Parsing();
